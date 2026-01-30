@@ -1,0 +1,97 @@
+
+/* 1. SELECTORES DE ELEMENTO - Estilos básicos para etiquetas HTML */
+body {
+    font-family: Arial, sans-serif;  /* Tipografía básica */
+    background-color: #f0f0f0;       /* Color de fondo gris claro */
+    margin: 20px;                    /* Espacio alrededor del cuerpo */
+}
+
+h1 {
+    color: #2c3e50;                  /* Color azul oscuro para el título */
+    text-align: center;              /* Centrar el texto */
+    font-size: 24px;                 /* Tamaño de fuente */
+}
+
+/* 2. SELECTORES DE CLASE - Estilos que podemos reutilizar */
+.contenedor-formulario {
+    background-color: white;         /* Fondo blanco para el formulario */
+    padding: 20px;                   /* Espacio interno */
+    border-radius: 8px;              /* Bordes redondeados */
+    max-width: 500px;                /* Ancho máximo */
+    margin: 0 auto;                  /* Centrar horizontalmente */
+}
+
+.grupo-campo {
+    /* Espacio entre cada campo */
+margin-bottom: 15px;             
+}
+
+.boton-enviar {
+    background-color: #3498db;       /* Color azul para el botón */
+    color: white;                    /* Texto blanco */
+    padding: 10px 20px;              /* Espacio interno */
+    border: none;                    /* Sin borde */
+    border-radius: 5px;              /* Bordes redondeados */
+    font-size: 16px;                 /* Tamaño de texto */
+    cursor: pointer;                 /* Cursor en forma de mano */
+}
+
+/* 3. SELECTORES DE ID - Estilo para un elemento específico */
+#seccion-intereses {
+    background-color: #f8f9fa;       /* Fondo gris muy claro */
+    padding: 15px;                   /* Espacio interno */
+    border: 1px solid #ddd;          /* Borde gris claro */
+    border-radius: 5px;              /* Bordes redondeados */
+}
+
+/* 4. ESTILOS PARA CAMPOS DE FORMULARIO */
+label {
+    color: #2c3e50;                  /* Color azul oscuro */
+    font-weight: bold;               /* Texto en negrita */
+    display: block;                  /* Ocupa toda la línea */
+    margin-bottom: 5px;              /* Espacio debajo de la etiqueta */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;                     /* Ocupa todo el ancho disponible */
+    padding: 8px;                    /* Espacio interno */
+    border: 2px solid #bdc3c7;       /* Borde gris */
+    border-radius: 4px;              /* Bordes redondeados */
+    font-size: 14px;                 /* Tamaño de texto */
+    box-sizing: border-box;          /* Incluye padding en el ancho total */
+}
+
+textarea {
+    width: 100%;                     /* Ocupa todo el ancho */
+    padding: 8px;                    /* Espacio interno */
+    border: 2px solid #bdc3c7;       /* Borde gris */
+    border-radius: 4px;              /* Bordes redondeados */
+    font-family: Arial, sans-serif;  /* Misma fuente que el cuerpo */
+    font-size: 14px;                 /* Tamaño de texto */
+    resize: vertical;                /* Permite cambiar el alto */
+}
+
+/* 5. ESTILOS PARA CHECKBOXES */
+ /* Espacio entre opciones */
+.opcion-interes {
+    margin-bottom: 8px;              
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;               
+}
+
+/* 6. EFECTOS AL PASAR EL MOUSE (HOVER) */
+/* Azul más oscuro al pasar el mouse */
+.boton-enviar:hover {
+    background-color: #2980b9;       
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover,
+textarea:hover {
+    border-color: #3498db;           /* Borde azul al pasar el mouse */
+}

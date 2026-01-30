@@ -1,0 +1,69 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de usuario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="contenedor-formulario">
+        <h1>Registro de la persona usuaria</h1>
+        
+        <form action="#" method="post">
+            <!-- Campo Nombre -->
+            <div class="grupo-campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <!-- Campo Apellido -->
+            <div class="grupo-campo">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            
+            <!-- Campo Correo electrónico -->
+            <div class="grupo-campo">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            
+            <!-- Campo Contraseña -->
+            <div class="grupo-campo">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="contraseña" required>
+            </div>
+            
+            <!-- Área de descripción -->
+            <div class="grupo-campo">
+                <label for="descripcion">Breve descripción sobre ti:</label>
+                <textarea id="descripcion" name="descripcion" rows="4"></textarea>
+            </div>
+            
+            <!-- Intereses -->
+            <div id="seccion-intereses">
+                <p>Selecciona tus intereses:</p>
+                <div class="opcion-interes">
+                    <input type="checkbox" id="deporte" name="intereses" value="deporte">
+                    <label for="deporte">Deporte</label>
+                </div>
+                
+                <div class="opcion-interes">
+                    <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+                    <label for="tecnologia">Tecnologia</label>
+                </div>
+                
+                <div class="opcion-interes">
+                    <input type="checkbox" id="arte" name="intereses" value="arte">
+                    <label for="arte">Arte</label>
+                </div>
+            </div>
+            
+            <!-- Botón de envío -->
+            <div class="grupo-campo">
+                <button type="submit" class="boton-enviar">Registrarse</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
